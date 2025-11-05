@@ -1,0 +1,12 @@
+[project]
+name = "peecoin"
+description = "Peecoin SIP-010 fungible token"
+authors = ["anthony"]
+telemetry = false
+
+[contracts.sip010-trait]
+path = "contracts/sip010-trait.clar"
+
+[contracts.peecoin]
+path = "contracts/peecoin.clar"
+depends_on = ["sip010-trait"]
